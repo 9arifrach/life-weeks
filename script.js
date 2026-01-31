@@ -1,6 +1,6 @@
 const birthday = new Date("2010-01-26"); // แก้วันเกิด
 const weeksInYear = 52;
-const lifeYears = 65;
+const lifeYears = 75;
 const totalWeeks = weeksInYear * lifeYears;
 
 const now = new Date();
@@ -31,3 +31,4 @@ for (let i = 0; i < totalWeeks; i++) {
 // แสดง % ด้านล่าง
 const percent = ((weeksPassed / totalWeeks) * 100).toFixed(1);
 document.getElementById("footer").innerText = `${percent}% of your life`;
+
