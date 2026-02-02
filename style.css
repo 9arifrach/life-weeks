@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 20px;
   background: #111;
-  color: white;
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,8 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #444;
+  background: #242424;
+  
 }
 
 .week:hover::after {
@@ -37,20 +38,37 @@ body {
   white-space: nowrap;
   border-radius: 6px;
   pointer-events: none;
-  box-shadow: 0 0 8px rgba(0,0,0,.6);
+  box-shadow: 0 0 8px rgba(124, 47, 47, 0.6);
 }
 
 .past {
-  background: #e5e5e5;
+  background: #ffffff;
+  box-shadow: 0 0 10px #00aeff;
 }
 
 .current {
   background: #ff3b3b;
-  box-shadow: 0 0 6px #ff3b3b;
+  box-shadow: 0 0 6px #ff0000;
 }
 #footer {
-  margin-top: 20px;
-  font-size: 16px;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.4;
 }
 
 
+@media (max-width: 800px) {
+  #grid {
+    grid-template-columns: repeat(26, 1fr); 
+  }
+}
+
+
+.special-event {
+  background: #ff7518 !important;
+  box-shadow: 0 0 10px #ff7518;
+  border-radius: 2px; /* เปลี่ยนทรงให้เด่น */
+  transform: scale(1.4);
+  z-index: 2;
+}
