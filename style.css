@@ -43,7 +43,6 @@ body {
 
 .past {
   background: #ffffff;
-  box-shadow: 0 0 10px #00aeff;
 }
 
 .current {
@@ -72,3 +71,4 @@ body {
   transform: scale(1.4);
   z-index: 2;
 }
+
